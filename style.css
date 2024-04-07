@@ -1,0 +1,59 @@
+.why-people-section{
+    background-color: #f9fafb;
+}
+
+.why-people h2 {
+    padding: 20px 0;
+}
+.why-icon{
+    font-size: 45px;
+    text-align: center;
+}
+
+.why-people-img{
+    position: relative !important;
+}
+.why-icon:before {
+    content: "\f144";
+    font-family: 'FontAwesome';
+    color: #e83b3e;
+    display: inline-block;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 318px;
+    left: 291px;
+}
+.why-icon::after{
+content: "";
+background-color:#e83b3e;
+display: inline-block;
+width: 65px;
+height: 65px;
+line-height: 65px;
+position: absolute;
+top: 318px;
+left: 291px;
+border-radius: 50%;
+
+animation: animation 1.6s ease-out infinite;
+
+}
+@keyframes animation {
+0%,30%{
+    transform: scale(0);
+    opacity: 1;
+}
+50%{
+    transform: scale(1.5);
+    opacity: .7;
+}
+100%{
+    transform: scale(2);
+    opacity: 0;
+}
+
+}
